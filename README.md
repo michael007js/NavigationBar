@@ -22,7 +22,7 @@
   "tabs": [
     {
       "tabPermissions": [
-        0//tab权限
+        0//tab权限，可用于根据用户VIP状态来实现动态加载
       ],
       "tabItems": [
         {
