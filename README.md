@@ -12,41 +12,40 @@
 
 ```
 {
-
-  "selectTab": 0,
-  "pattingTop": 8,
-  "pattingBottom": 6,
-  "height": 60,
-  "reserveAreaHeight": 10,
-  "backgroundColor": "#FFFFFF",
-  "cornerMarkByConfig": true,
+  "selectTab": 0,//"这个字段用于决定导航栏默认选中那一项"
+  "pattingTop": 8,//导航栏顶边距
+  "pattingBottom": 6,//导航栏底边距
+  "height": 60,//导航栏总体高度
+  "reserveAreaHeight": 10,//导航栏定边开始的保留区域，用于形成异形导航栏，值越大，异形的区域也越大
+  "backgroundColor": "#FFFFFF",//背景颜色
+  "cornerMarkByConfig": true,//用于决定角标的显示是否由配置文件决定，如果是，将直接显示下面tabItems中的cornerMark值
   "tabs": [
     {
       "tabPermissions": [
-        0
+        0//tab权限
       ],
       "tabItems": [
         {
           "fragmentIndex": 0,
-          "bigImage": false,
-          "imageWidth": 23,
-          "imageHeight": 23,
-          "pageUrl": "",
-          "checkedUrl": "https://pics1.baidu.com/feed/77c6a7efce1b9d1681608e21b0371a868d546439.jpeg",
-          "unCheckedUrl": "https://pics0.baidu.com/feed/77c6a7efce1b9d16cbf6fe3baa371a868d5464ad.jpeg",
-          "weight": 0.33,
-          "label": "宝马",
-          "moduleName": "bmw",
-          "betweenImageAndText": 3,
-          "textOffsetY": 3,
-          "textSize": 10,
-          "cornerMark": "",
-          "cornerMarkTextSize": 8,
-          "cornerMarkPaddingVertical": 2,
-          "cornerMarkPaddingHorizontal": 4,
-          "checkTextColor": "#e9302d",
-          "unCheckTextColor": "#666666",
-          "isChecked": true
+          "bigImage": false,//是否是大图模式
+          "imageWidth": 23,//图片宽度
+          "imageHeight": 23,//图片高度
+          "pageUrl": "",//点击后打开的链接，用于路由、H5链接等
+          "checkedUrl": "https://pics1.baidu.com/feed/77c6a7efce1b9d1681608e21b0371a868d546439.jpeg",//选中展示图片
+          "unCheckedUrl": "https://pics0.baidu.com/feed/77c6a7efce1b9d16cbf6fe3baa371a868d5464ad.jpeg",//未选中展示
+          "weight": 0.33,//权重，这里是宽度的权重，而不是宽高权重
+          "label": "宝马",//展示标题
+          "moduleName": "bmw",//模块名称，用于创建绑定fragment
+          "betweenImageAndText": 3,//图标与标签之间的间距
+          "textOffsetY": 3,//标签Y轴偏移量
+          "textSize": 10,//标签文本字号
+          "cornerMark": "",//角标文本
+          "cornerMarkTextSize": 8,//角标文本字号
+          "cornerMarkPaddingVertical": 2,//角标上下内边距
+          "cornerMarkPaddingHorizontal": 4,//角标左右内边距
+          "checkTextColor": "#e9302d",//标签选中时字体颜色
+          "unCheckTextColor": "#666666",//标签未选中时字体颜色
+          "isChecked": true//是否选中
         },
         {
           "fragmentIndex": 1,
